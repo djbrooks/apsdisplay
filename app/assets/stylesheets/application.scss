@@ -22,7 +22,7 @@
  }
 .item2 {
     grid-area: menu;
-    background-color: #e3671c;
+    background-color: #0a4d83;
     color: white;
     padding-top: 10px;
     padding-bottom: 0px;
@@ -38,7 +38,7 @@
     'header header header header header header'
     'menu main main main right right'
     'menu footer footer footer footer footer';
-  grid-gap: 0px;
+  grid-gap: 10px;
 }
 .grid-container > div {
   text-align: center;
@@ -57,6 +57,6 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  background-color: #555;
+  background-color: #e3671c;
   color: white;
 }
