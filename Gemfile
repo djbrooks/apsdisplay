@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # gem haml for quicker erb
 gem 'haml'
 
+# gem jquery for easier js
+gem 'jquery-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
