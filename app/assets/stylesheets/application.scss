@@ -14,47 +14,14 @@
  *= require_self
  */
 
-.item1 { 
-    grid-area: header;
-    background-color: #0a4d83;
-    color: white;
-    padding: 20px 0;
-    margin-top: 0;
- }
-.item2 {
-    grid-area: menu;
-    background-color: #0a4d83;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    margin: 0;
-    height: 100vh;
-}
-.item3 { 
-  grid-area: main; 
-  background-color: #0a4d83;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.item4 { 
-  grid-area: right;
-  background-color: #0a4d83;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.item5 { 
-  grid-area: footer;
-}
-
-.grid-container {
+ .grid-container {
   display: grid;
   grid-template-areas:
     'header header header header header header'
     'menu main main main right right'
+    'menu body body body body body'
     'menu footer footer footer footer footer';
-  grid-row-gap: 10px;
+  grid-row-gap: 0px;
   grid-column-gap: 0px;
 }
 .grid-container > div {
@@ -65,7 +32,8 @@ ul {
   list-style-type: none;
   margin-top: 10px;
   padding: 0;
-  background-color: #0a4d83
+  background-color: #0a4d83;
+  height: 100vh;
 }
 li a {
   display: block;
@@ -74,7 +42,7 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  background-color: #e3671c;
+  background-color: #00a2d3;
   color: white;
 }
 body {
@@ -83,4 +51,46 @@ body {
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 0px;
+}
+
+ .item1 { 
+    grid-area: header;
+    background-color: #0a4d83;
+    color: white;
+    padding: 20px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+.item2 {
+    grid-area: menu;
+    background-color: #e3671c;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 0;
+    margin: 0;
+}
+.item3 { 
+  grid-area: main; 
+  background-color: #e3671c;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+.item4 { 
+  grid-area: right;
+  background-color: #e3671c;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.item5 { 
+  grid-area: body;
+  background-color: white;
+}
+.item6 {
+  grid-area: footer;
+  background-color: #e3671c;
+  grid-row-start: 6;
+  grid-row-end: 6;
 }
