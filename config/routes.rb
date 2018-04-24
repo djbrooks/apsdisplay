@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :display
+resources :display
   get 'index' => 'display#index'
   root :to => 'display#index'
-  get 'planning' => 'settings#planning', as: 'settings/planning'
+
+resources :settings
+  get 'planning' => 'settings#planning'
   root :to => 'settings#planning'
   get 'engineering' => 'settings#engineering'
   root :to => 'settings#engineering'
@@ -22,5 +24,4 @@ Rails.application.routes.draw do
   root :to => 'settings#wh2'
   get 'production' => 'settings#production'
   root :to => 'settings#production'
-
 end
