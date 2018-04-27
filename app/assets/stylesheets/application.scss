@@ -88,55 +88,187 @@ body {
   padding-left: 50px;
   font-size: 20pt;
 }
-.checkcontainer {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  margin-left: 75px;
-  font-size: 16pt;
-cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.option3 {
   text-align: left;
+  padding-left: 50px;
+  font-size: 20pt;
 }
-.checkcontainer input {
-  position: absolute;
-  opacity: 0;
+#resolution {
+  text-align: left;
+  margin-left: 100px;
+  font-size: 20pt;
 }
-.radiobtn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-  margin-left: 10px;
+#resolution [type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
 }
-.checkcontainer:hover input ~ .radiobtn {
-  background-color: #ccc;
+#resolution [type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
 }
-.checkcontainer input:checked ~ .radiobtn {
-  background-color: #00a2d3;
+#resolution [type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
 }
-.radiobtn:after {
-  content: "";
-  position: absolute;
-  display: none;
+#resolution [type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #00a2d3;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
-.checkcontainer input:checked ~ .radiobtn:after {
-  display: block;
+#resolution [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
 }
-.checkcontainer .radiobtn:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
+#resolution [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+#resolution [value="3840x2160"] {
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+#assignee1 {
+  text-align: left;
+  margin-left: 100px;
+  font-size: 20pt;
+}
+#assignee1 [type="radio"]:checked,
+#assignee1 [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+#assignee1 [type="radio"]:checked + label,
+#assignee1 [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+}
+#assignee1 [type="radio"]:checked + label:before,
+#assignee1 [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+#assignee1 [type="radio"]:checked + label:after,
+#assignee1 [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #00a2d3;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+#assignee1 [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+#assignee1 [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+#assignee1 [value="firstlast"] {
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+#assignee2 {
+  text-align: left;
+  margin-left: 100px;
+  font-size: 20pt;
+}
+#assignee2 [type="radio"]:checked,
+#assignee2 [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+#assignee2 [type="radio"]:checked + label,
+#assignee2 [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+}
+#assignee2 [type="radio"]:checked + label:before,
+#assignee2 [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+#assignee2 [type="radio"]:checked + label:after,
+#assignee2 [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #00a2d3;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+#assignee2 [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+#assignee2 [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+#assignee2 [value="firstlast"] {
+  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 #room a {
   display: block;
@@ -182,4 +314,45 @@ cursor: pointer;
 }
 #wh2 {
   float: right;
+}
+#displaybtn a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  display: block;
+  padding: 15px 40px 15px 15px;
+}
+#displaybtn {
+  float: right;
+  background-color: #00a2d3;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18pt;
+  display: block;
+  margin-top: 45px;
+  padding: 15 20 15 15;
+  text-decoration: none;
+  list-style-type: none;
+}
+#displaybtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+#displaybtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#displaybtn:hover span {
+  padding-right: 25px;
+}
+#displaybtn:hover span:after {
+  opacity: 1;
+  right: 0;
 }

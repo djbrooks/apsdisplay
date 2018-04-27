@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 resources :display
   get 'index' => 'display#index'
   root :to => 'display#index'
+  get 'acctdisplay' => 'display#acctdisplay'
+  root :to => 'display#acctdisplay'
 
 resources :settings
   get 'planning' => 'settings#planning'

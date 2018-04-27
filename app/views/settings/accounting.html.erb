@@ -8,6 +8,7 @@
 <body>
 
 <div class="grid-container">
+  
   <div class="item1">APS Display Settings
     <div id="accounting">Accounting</div>
   </div>
@@ -26,51 +27,43 @@
   </div>
   <div class="item3">
      <body>
+     <button id="displaybtn"><a href="acctdisplay"><span>View Display</a></span></button>
      <p class="option1">Resolution</p>
-      <form>
-        <label class="checkcontainer">3840 x 2160
-          <input type="radio" name="resolution" checked="checked">
-          <span class="radiobtn"></span>
-        </label>
-        <label class="checkcontainer">1920 x 1080
-          <input type="radio" name="resolution">
-          <span class="radiobtn"></span>
-        </label>
-        <label class="checkcontainer">1280 x 720
-          <input type="radio" name="resolution">
-          <span class="radiobtn"></span>
-        </label>
+      <form id="resolution">
+          <input type="radio" name="resolution" value="3840x2160" id="3840x2160" checked />
+          <label class="choice" for="3840x2160">3840 x 2160</label><br />
+
+          <input type="radio" name="resolution" value="1920x1080" id="1920x1080"/>
+          <label class="choice" for="1920x1080">1920 x 1080</label><br />
+
+          <input type="radio" name="resolution" value="1280x720" id="1280x720" />
+          <label class="choice" for="1280x720">1280 x 720</label><br />
+        <hr />
       </form>
-      <p class="option2">User One</p>
-      <form>
-        <label class="checkcontainer">First Lastname
-          <input type="radio" name="assignment" checked="checked">
-          <span class="radiobtn"></span>
-        </label>
-        <label class="checkcontainer">Second Lastname
-          <input type="radio" name="assignment">
-          <span class="radiobtn"></span>
-        </label>
-        <label class="checkcontainer">Third Lastname
-          <input type="radio" name="assignment">
-          <span class="radiobtn"></span>
-        </label>
-        </form>
-        <p class="option2">User Two</p>
-        <form>
-          <label class="checkcontainer">First Lastname
-            <input type="radio" name="assignment" checked="checked">
-            <span class="radiobtn"></span>
-          </label>
-          <label class="checkcontainer">Second Lastname
-            <input type="radio" name="assignment">
-            <span class="radiobtn"></span>
-          </label>
-          <label class="checkcontainer">Third Lastname
-            <input type="radio" name="assignment">
-            <span class="radiobtn"></span>
-          </label>
-          </form>
+
+      <p class="option2">Assignee One</p>
+        <form id="assignee1">
+          <input type="radio" name="assignee" value="firstlast" id="firstlast" checked />
+          <label class="choice" for="firstlast">First Last</label><br />
+
+          <input type="radio" name="assignee" value="firstlast" id="firstlast"/>
+          <label class="choice" for="firstlast">First Last</label><br />
+
+          <input type="radio" name="assignee" value="firstlast" id="firstlast" />
+          <label class="choice" for="firstlast">First Last</label><br />
+        <hr />
+      </form>
+      <p class="option3">Assignee Two</p>
+        <form id="assignee2">
+          <input type="radio" name="assignee" value="firstlast" id="firstlast" checked />
+          <label class="choice" for="firstlast">First Last</label><br />
+
+          <input type="radio" name="assignee" value="firstlast" id="firstlast"/>
+          <label class="choice" for="firstlast">First Last</label><br />
+
+          <input type="radio" name="assignee" value="firstlast" id="firstlast" />
+          <label class="choice" for="firstlast">First Last</label><br />
+      </form>
      </body>
      </div>
      <div class="item4"><p class="footertxt">AquaPhoenix Scientific</p></div>
