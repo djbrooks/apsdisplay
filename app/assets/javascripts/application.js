@@ -14,3 +14,15 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
+
+(function () {
+    var width = screen.width,
+        height = screen.height;
+    setInterval(function () {
+        if (screen.width !== width || screen.height !== height) {
+            width = screen.width;
+            height = screen.height;
+            $(window).trigger('resolutionchange');
+        }
+    }, 50);
+}());

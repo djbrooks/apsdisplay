@@ -70,7 +70,7 @@ body {
   color: white;
   margin-top: 10;
   margin-bottom: 0;
-  padding-bottom: 0;
+  padding-bottom: 20px;
   padding-top: 10px;
 }
 .footertxt {
@@ -82,12 +82,13 @@ body {
   width: auto;
   height: 100vh;
   display: grid;
-  grid-template-columns: 2fr 2fr 0fr;
+  grid-template-columns: 2fr 2fr;
   grid-template-rows: 0fr 1fr 1fr;
   padding: 0;
   margin: 0;
   grid-template-areas:
     "header header header"
+    "content content content"
     "content content content"
     "footer footer footer";
 }
@@ -115,6 +116,34 @@ body {
   display: block;
   font-size: 20pt;
   font-weight: bolder;
+}
+.item5-5 {
+  text-align: right;
+  margin-top: 20px;
+  display: block;
+  font-size: 18pt;
+  font-weight: bolder;
+}
+.item6-6 {
+  text-align: right;
+  margin-top: 20px;
+  display: block;
+  font-size: 18pt;
+  font-weight: bolder;
+}
+.item7-7 {
+  grid-area: footer;
+  background-color: #e3671c;
+  color: white;
+  margin-top: 10;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.footertxt {
+  padding: 0 0 0 0;
+  margin: 0;
+  font-size: 18pt;
 }
 .option1 {
   text-align: left;
