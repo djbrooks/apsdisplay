@@ -1,3 +1,5 @@
+<% provide(:page_title, "Planning") %>
+<% provide(:planning_active, "active") %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,22 +11,9 @@
 
 <div class="grid-container">
   <div class="item1">APS Display Settings
-    <div id="planning">Planning</div>
+    <div id="planning"><%= yield(:page_title) %></div>
   </div>
-  <div class="item2"><p class="displaytxt">Display Room</p>
-    <ul id="side-menu">
-      <li id="room"><a href="accounting">Accounting</a></li>
-      <li id="room"><a href="cs">Customer Service</a></li>
-      <li id="room"><a href="wh1">Education WH1</a></li>
-      <li id="room"><a href="wh2">Education WH2</a></li>
-      <li id="room"><a href="engineering">Engineering</a></li>
-      <li id="room"><a href="facilities">Facilities</a></li>
-      <li id="room"><a href="hr">Human Resources</a></li>
-      <li id="room"><a href="it">Information Technologies</a></li>
-      <li id="room"><a href="planning">Planning</a></li>
-      <li id="room"><a href="production">Production</a></li>
-    </ul>
-  </div>
+  <%= render 'layouts/navbar' %>
   <div class="item3">
      <body>
           <button id="displaybtn"><a href="plandisplay"><span>View Display</a></span></button>
