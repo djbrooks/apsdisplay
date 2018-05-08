@@ -11,7 +11,10 @@
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
-# Ignore all logfiles and tempfiles.
+# Ignore all logfiles, tempfiles, and vim editor swap files.
+# Also, local help info in .README.txt for developers who forget things... :) -djb 
+*.swp
+.README.txt
 /log/*
 /tmp/*
 !/log/.keep
